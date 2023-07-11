@@ -1,0 +1,17 @@
+.category-card{
+    height: 100%;
+    width: 100%;
+    background: linear-gradient(#000000 0%, #ffffff6b 25%, #ffffff6b 50%, #ffffff6b 75%,  #ffd06c98 100%);
+    position: absolute;
+    top: 0px;
+
+
+    
+    /* background: linear-gradient(45deg, red 0 50%, blue 50% 100%); */
+    /* background: linear-gradient(180deg, #000 0%, rgba(0, 0, 0, 0.00) 100%); */
+}
+.category-card-bg{
+    position: relative;
+    height: auto;
+    width: 100%;
+}
