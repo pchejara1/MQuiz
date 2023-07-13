@@ -18,3 +18,301 @@
 .box-header{
     display: flex;
 }
+
+
+
+
+
+/* header design  */
+.header-section{
+    background-color: var(--green);
+    padding: 1rem;
+    align-items: center;
+    justify-content: center;
+}
+.logo-wrap img{
+    height: 100%;
+    width: auto;
+}
+.nav-menu-wrap, .btn-wrap{
+    align-items: center;
+    margin: auto;
+}
+.nav-menu{
+    list-style-type: none;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    margin: auto;
+}
+.nav-menu li a{
+    color: #FFD06C;
+    font-size: 1rem;
+    font-weight: 500;
+    padding: 0 20px;
+}
+.btn-wrap{
+    display: flex;
+    justify-content: end;
+}
+.btn{
+    border-radius: 0.25rem;
+    padding: 0.4375rem 1.25rem;
+    border: 1px solid var(--white);
+    font-weight: 500;
+    font-size: 1rem;
+}
+.signup-btn{
+    margin-right: 10px;
+    background-color: var(--white);
+}
+.signin-btn{
+    background-color: transparent;
+    color: var(--white);
+}
+.signup-btn:hover{
+    background-color: transparent;
+    color: var(--white);
+    border: 1px solid var(--white);
+}
+.signin-btn:hover{
+    background-color: var(--white);
+    color: var(--black);
+}
+
+/* hero section design  */
+.hero-section{
+    background: var(--yellow);
+    padding: 3.75rem 0;
+    align-items: center;
+}
+.text-half{
+    margin: auto;
+}
+.hero-title{
+    font-size: 4.5rem;
+    font-weight: 800;
+    line-height: 167.7%;
+    text-transform: uppercase;
+}
+.hero-description{
+    font-size: 1.125rem;
+    font-weight: 500;
+}
+.hero-register-btn{
+    background-color: var(--green);
+    font-weight: 600;
+    border-color: var(--green);
+    color: var(--white);
+}
+.hero-register-btn:hover{
+    background-color: transparent;
+    border-color: var(--green);
+    color: var(--green);
+}
+.all-categories-link{
+    color: var(--green);
+    font-size: 1rem;
+    font-weight: 600;
+    border: none;
+}
+
+/* how it works section design  */
+.how-it-works-section{
+    padding: 3.75rem 0;
+    text-align: center;
+}
+.section-title{
+    color: var(--green);
+    text-align: center;
+    font-size: 3rem;
+    font-weight: 600;
+    line-height: 150%; /* 4.5rem */
+    letter-spacing: -0.06rem;
+    /* max-width: 50vw;
+    margin: auto; */
+    /* margin-bottom: 2.5rem; */
+}
+.section-text{
+    color: var(--text-grey);
+text-align: center;
+font-family: Plus Jakarta Sans;
+font-size: 1.125rem;
+font-style: normal;
+font-weight: 400;
+line-height: 150%; 
+}
+.step-card-container {
+    justify-content: space-between;
+    position: relative;
+}
+.step-card img{
+    width: auto;
+}
+.arrow-1, .arrow-2{
+    width: auto;
+}
+.arrow-1{
+    position: absolute;
+    top: 1rem;
+    left: 14vw;
+}
+.arrow-2{
+    position: absolute;
+    top: 1rem;
+    right: 14vw;
+}
+.step-title{
+    color: var(--green);
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+.step-description{
+    color: var(--text-grey);
+    font-size: 0.875rem;
+    font-weight: 400;
+}
+
+/* category section design  */
+.category-section{
+    padding: 3.75rem 0;
+    text-align: center;
+}
+.category-title-btn{
+    color: var(--black);
+    font-size: 1.5rem;
+    font-weight: 600;
+    opacity: 0.6;
+    padding: 1.5rem;
+    border-bottom: 1px solid rgb(131, 131, 131);
+    margin: 15px 0;
+}
+.category-title-btn.active{
+    opacity: 1;
+    border-bottom: 0.25rem solid #1A202C;
+}
+
+
+/* why choose us section design  */
+.why-choose-us-section{
+    padding: 3.75rem 0;
+    text-align: center;
+}
+.why-choose-card{
+    border: 1px solid black;
+    /* margin: 0.5rem; */
+    border-radius: 0.5rem;
+    height: 100%;
+    text-align: left;
+    padding: 1.5rem;
+    margin: auto;
+  }
+.why-choose-card.blue-card{
+    background: linear-gradient(0deg, #2DD2E3 0%, rgba(45, 210, 227, 0.00) 100%);
+}
+.why-choose-card.yellow-card{
+    background: linear-gradient(0deg, #FFB509 0%, rgba(255, 255, 255, 0.00) 100%);
+}
+.why-choose-card.pink-card{
+    background: linear-gradient(0deg, #FF5E95 0%, rgba(255, 255, 255, 0.00) 100%);
+}
+.why-choose-us-card-title{
+    color: var(--black);
+    font-size: 1.5rem;
+    font-weight: 600;
+    line-height: 150%;
+    letter-spacing: -0.03rem;
+}
+.why-choose-us-card-text{
+    color: var(--black);
+    font-weight: 400;
+    line-height: 175%;
+    letter-spacing: -0.02rem;
+}
+
+/* offer section design  */
+.offer-section{
+    background: #001B30;
+}
+.offer-text-container{
+    align-items: center;
+    margin: auto;
+    text-align: center;
+    padding: 0;
+    color: aliceblue;
+
+}
+.offer-title{
+    color: #FFF;
+    text-align: center;
+    font-size: 3rem;
+    font-weight: 600;
+    line-height: 150%;
+    letter-spacing: -0.06rem;
+}
+.offer-text{
+    color: var(--yellow);
+    text-align: center;
+    font-size: 1.125rem;
+    font-weight: 400;
+    line-height: 150%;
+    width: 70%;
+    margin: auto;
+}
+/* testimonial section design  */
+.testimonial-section{
+    padding: 3.75rem 0;
+    text-align: center;
+}
+
+
+
+/* footer section design  */
+.footer-image-section{
+    padding: 1.75rem 0;
+}
+.footer-section{
+    background-color: var(--green);
+    padding: 5rem 0;
+    color: var(--white);
+    /* text-align: center; */
+}
+.footer-left{
+    margin: auto;
+}
+.footer-logo{
+    width: auto;
+}
+.social-icons{
+    padding: 0;
+    display: flex;
+    list-style-type: none;
+}
+.social-icons img{
+    width: auto;
+}
+.footer-title{
+    color: #FFB300;
+font-size: 1.5rem;
+font-style: normal;
+font-weight: 600;
+line-height: 150%; /* 2.25rem */
+letter-spacing: -0.03rem;
+}
+.footer-menu-list{
+    list-style-type: none;
+    padding: 0;
+}
+.footer-menu-list li{
+    margin: 2rem 0;
+}
+.footer-menu-list a{
+    color: #FFF;
+/* Medium/Type@16 */
+font-family: Plus Jakarta Sans;
+font-size: 1rem;
+font-style: normal;
+font-weight: 500;
+line-height: 150%; /* 1.5rem */
+letter-spacing: -0.02rem;
+}
