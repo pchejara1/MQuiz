@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Account OTP Verification | MNeet - NEET Preparation Tips & study strategy for Biology, Physics, Chemistry</title>
+    <meta name="description" content="MNeet - NEET Preparation Tips & study strategy for Biology, Physics, Chemistry">
+    <meta name="keywords" content="MNeet">
+
+    <!-- Favicons -->
+    <link href="assets/images/common/favicon.png" rel="icon">
+    <link href="assets/images/common/favicon.png" rel="apple-touch-icon">
+
+    <!-- Vendor CSS Files -->
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+
+    <!--  Main CSS File -->
+    <link rel="stylesheet" href="assets/css/main.css">
+    <link rel="stylesheet" href="assets/css/home.css">
+    <link rel="stylesheet" href="assets/css/sign.css">
+
+    <!-- google fonts  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+</head>
+<body>
+
+    <div id="mobileNav" class="overlay" onclick="closeNav()">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <div class="overlay-content">
+          <div class="left-container ">
+            <div class="pad-20"></div>
+            <div class="logo-container">
+              <a href="index.html"><img src="assets/images/common/logo.png" alt="logo"></a>
+            </div>
+            <div class="pad-20"></div>
+            <div class="menu-item-container">
+              <ul class="item-menu">
+                <li><a href="index.html">
+                    <img src="assets/images/icons/right-arrow.svg" alt="">&ensp; Home
+                  </a>
+                </li>
+                <li><a href="take-a-test.html">
+                    <img src="assets/images/icons/right-arrow.svg" alt="">&ensp; Test
+                  </a>
+                </li>
+                <li><a href="question-bank.html">
+                    <img src="assets/images/icons/right-arrow.svg" alt="">&ensp; Question Bank
+                  </a>
+                </li>
+                <li><a href="settings.html">
+                    <img src="assets/images/icons/right-arrow.svg" alt="">&ensp; Settings
+                  </a>
+                </li>
+                <li><a href="contact-us.html">
+                    <img src="assets/images/icons/right-arrow.svg" alt="">&ensp; Contact Us
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <div class="pad-10"></div>
+            <div class="btn-wrap">
+              <div class="btn signin-btn" onclick="javascript:window.location.href='login.html'">Login</div>
+              <div class="btn signup-btn" onclick="javascript:window.location.href='register.html'">Register</div>
+            </div>
+    
+          </div>
+        </div>
+      </div>
+
+
+      <header class=" header-section head-for-mobile">
+        <div class="container">
+          <div class="mobile-header">
+            <a href="index.html"><img src="assets/images/common/logo.png" alt=""></a>
+            <img src="assets/images/icons/menu.svg" class="" onclick="openNav()">
+          </div>
+        </div>
+      </header>
+
+    <!-- header starts  -->
+    <header class="header-section head-for-desktop">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-2 logo-wrap">
+              <a href="index.html">
+                <img class="logo" src="assets/images/common/logo.png" alt="">
+              </a>
+            </div>
+            <div class="col-lg-7 nav-menu-wrap">
+            <ul class="nav-menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="take-a-test.html">Test</a></li>
+                <li><a href="question-bank.html">Question Bank</a></li>
+                <li><a href="settings.html">Settings</a></li>
+                <li><a href="contact-us.html">Contact Us</a></li>
+                <li><a href="#"><img src="assets/images/icons/search.svg" alt=""></a></li>
+            </ul>
+            </div>
+            <!-- <div class="col-lg-1 serch-icon-container">
+                <img src="assets/images/icons/search.svg" alt="">
+            </div> -->
+            <div class="col-lg-3 btn-container">
+              <div class="btn signin-btn" onclick="javascript:window.location.href='login.html'">Login</div>
+              <div class="btn signup-btn" onclick="javascript:window.location.href='register.html'">Register</div>
+            </div>
+          </div>
+        </div>
+      </header>
+      <!-- Header ends -->
+
+      <!-- login content starts  -->
+      <section class="sign-section">
+        <div class="container">
+            <div class="col-container">
+                <div class="row">
+                    <div class="col-lg-6 sign-content-half">
+                        <div class="sign-card">
+                            <div class="card-intro text-center">
+                                <h3>Validation</h3>
+                                <p>Enter OTP! Give us a minute… <br>As we are verifying your Mobile Number/E-mail.</p>
+                            </div>
+                            <form class="login-form-bg">
+                                <div class="row mt-3">
+                                    <label for="" class="form-label">Enter OTP</label>
+                                    <div class="col-12 otp-container">
+                                        <input type="tel" class="form-control" id="" maxlength="1" required="">
+                                        <input type="tel" class="form-control" id="" maxlength="1" required="">
+                                        <input type="tel" class="form-control" id="" maxlength="1" required="">
+                                        <input type="tel" class="form-control" id="" maxlength="1" required="">
+                                    </div>
+                                </div>
+                                <div class="d-grid gap-2 py-3">
+                                    <a href="account-verification-success.html" class="btn-sign" type="submit"> Submit</a>
+                                </div>
+                                <div class="resend-timer-container">
+                                    <p class="fw-bold">0:25</p>
+                                    <p class="fw-bold">Resend OTP</p>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 sign-img-half">
+                        <img src="assets/images/others/otp-validation.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+      </section>
+      <!-- login content ends  -->
+
+      <!-- footer section starts -->
+      <footer class="footer-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3 col-md-12">
+                    <img src="assets/images/common/logo.png" alt="">
+                    <p>We are not here to sell you products, we sell value throught our expertise.</p>
+                    <ul class="social-icon-container">
+                        <li><a href="#"><img src="assets/images/icons/facebook.svg" alt=""></a></li>
+                        <li><a href="#"><img src="assets/images/icons/twitter.svg" alt=""></a></li>
+                        <li><a href="#"><img src="assets/images/icons/instagram.svg" alt=""></a></li>
+                        <li><a href="#"><img src="assets/images/icons/linkedin.svg" alt=""></a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-2 col-md-4  col-sm-4 col-6">
+                    <div class="pad-30"></div>
+                    <ul class="footer-menu">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="settings.html">Settings</a></li>
+                        <li><a href="take-a-test.html">Test</a></li>
+                        <li><a href="question-bank.html">Question Bank</a></li>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Reviews</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-2 col-md-4 col-sm-4 col-6">
+                    <div class="pad-30"></div>
+                    <ul class="footer-menu">
+                        <li><a href="contact-us.html">Contact Us</a></li>
+                        <li><a href="#">Place A Call</a></li>
+                        <li><a href="#">Email</a></li>
+                        <li><a href="privacy-policy.html">Privacy Policy</a></li>
+                        <li><a href="terms-condition.html">Terms Of Use</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-2 col-md-4  col-sm-4 download-container">
+                    <div class="pad-30"></div>
+                    <a href="#"><img src="assets/images/common/app-store.png" alt=""></a>
+                    <a href="#"><img src="assets/images/common/google-play.png" alt=""></a>
+                </div>
+                <div class="col-lg-3 col-md-12">
+                    <div class="pad-30"></div>
+                    <ul class="contact-menu-footer">
+                        <li><a href="#">neet.m-tutor.com</a></li>
+                        <li>W485, 2nd Avenue, W Block, Sector C, Anna Nagar West, Chennai - 600101</li>
+                        <li><a href="#">044 - 42807514</a></li>
+                        <li>Call Us @ <a href="#">+91 87 54 54 83 83</a></li>
+                        <li><a href="#">support@m-tutor.com</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-lg-6 offset-lg-3 col-md-8 offset-md-2 col-sm-10 offset-sm-1 subs-container">
+                <div class="pad-20"></div>
+                <h3 class="subscribe-text">Subscribe to get latest updates</h3>
+                <div class="row">
+                    <input class="col-8 subs-input" type="text" placeholder="Your Email Address">
+                    <button class="col-4 btn subs-btn">Subscribe</button>
+                </div>
+                
+            </div>
+        </div>
+      </footer>
+      <!-- footer section ends -->
+     
+
+    <!--  JS Files -->
+    <script src="assets/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Main JS File -->
+    <script src="assets/js/main.js"></script>
+    
+</body>
+</html>

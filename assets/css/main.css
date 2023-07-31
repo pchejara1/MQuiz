@@ -1,16 +1,19 @@
 :root{
-    --green: #00420E;
-    --yellow: #FFD06C;
-    --text-grey: #444444;
+    --primary: #B099DC;
+    --secondary: #FFC539;
+    --text-grey: #333333;
     --white: #ffffff;
     --black: #000000;
 }
 body{
-    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-family: 'Source Sans Pro', poppins;
     font-weight: 500;
     padding: 0;
     margin: 0;
     margin: auto;
+}
+p{
+    font-size: 1.5rem;
 }
 .pad-3 {
     padding: 3px 0;
@@ -37,15 +40,15 @@ body{
 }
 
 .pad-30 {
-    padding: 30px 0;
+    padding: 3rem 0;
 }
 
 .pad-40 {
-    padding: 40px 0;
+    padding: 4rem 0;
 }
 
 .pad-50 {
-    padding: 50px 0;
+    padding: 5rem 0;
 }
 
 .pad-60 {
@@ -70,4 +73,38 @@ a {
 
 *{
     /* border: 1px solid grey; */
+}
+
+
+
+
+.overlay {
+    width: 0%;
+    height: 100%;
+    position: fixed;
+    z-index: 5;
+    top: 0;
+    left: 0;
+    overflow-y: hidden;
+    transition: 0.5s;
+    background-color: var(--black);
+}
+
+.overlay-content {
+    position: relative;
+    margin-left: 2rem;
+    /* top: 25%; */
+    width: 100%;
+    /* margin-top: 10px; */
+}
+
+.overlay .closebtn {
+    position: absolute;
+    z-index: 3;
+    top: 10px;
+    right: 10px;
+    text-decoration: none;
+    font-size: 40px;
+
+    color: var(--white)
 }

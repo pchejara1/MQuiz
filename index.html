@@ -4,9 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
-    <title>MQuiz - The Ultimate Math Portal</title>
-    <meta name="description" content="Quiz">
-    <meta name="keywords" content="Quiz">
+    <title>MNeet - NEET Preparation Tips & study strategy for Biology, Physics, Chemistry</title>
+    <meta name="description" content="MNeet - NEET Preparation Tips & study strategy for Biology, Physics, Chemistry">
+    <meta name="keywords" content="MNeet">
 
     <!-- Favicons -->
     <link href="assets/images/common/favicon.png" rel="icon">
@@ -16,44 +16,101 @@
     <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
 
     <!--  Main CSS File -->
-    <link rel="stylesheet" href="assets/css/index.css">
     <link rel="stylesheet" href="assets/css/main.css">
+    <link rel="stylesheet" href="assets/css/home.css">
 
     <!-- google fonts  -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@200;300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap" rel="stylesheet">
 
     <!-- slider links -->
     <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.3.0/css/bootstrap-grid.min.css"> -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.css">
     <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"> -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-
     
 </head>
 <body>
+
+    <div id="mobileNav" class="overlay" onclick="closeNav()">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <div class="overlay-content">
+          <div class="left-container ">
+            <div class="pad-20"></div>
+            <div class="logo-container">
+              <a href="index.html"><img src="assets/images/common/logo.png" alt="logo"></a>
+            </div>
+            <div class="pad-20"></div>
+            <div class="menu-item-container">
+              <ul class="item-menu">
+                <li><a href="index.html">
+                    <img src="assets/images/icons/right-arrow.svg" alt="">&ensp; Home
+                  </a>
+                </li>
+                <li><a href="take-a-test.html">
+                    <img src="assets/images/icons/right-arrow.svg" alt="">&ensp; Test
+                  </a>
+                </li>
+                <li><a href="question-bank.html">
+                    <img src="assets/images/icons/right-arrow.svg" alt="">&ensp; Question Bank
+                  </a>
+                </li>
+                <li><a href="settings.html">
+                    <img src="assets/images/icons/right-arrow.svg" alt="">&ensp; Settings
+                  </a>
+                </li>
+                <li><a href="contact-us.html">
+                    <img src="assets/images/icons/right-arrow.svg" alt="">&ensp; Contact Us
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <div class="pad-10"></div>
+            <div class="btn-wrap">
+              <div class="btn signin-btn" onclick="javascript:window.location.href='login.html'">Login</div>
+              <div class="btn signup-btn" onclick="javascript:window.location.href='register.html'">Register</div>
+            </div>
+    
+          </div>
+        </div>
+      </div>
+
+
+      <header class=" header-section head-for-mobile">
+        <div class="container">
+          <div class="mobile-header">
+            <a href="index.html"><img src="assets/images/common/logo.png" alt=""></a>
+            <img src="assets/images/icons/menu.svg" class="" onclick="openNav()">
+          </div>
+        </div>
+      </header>
+
     <!-- header starts  -->
-    <header class="header-section">
+    <header class="header-section head-for-desktop">
         <div class="container">
           <div class="row">
             <div class="col-lg-2 logo-wrap">
               <a href="index.html">
-                <img class="logo" src="assets/images/common/logo.svg" alt="">
+                <img class="logo" src="assets/images/common/logo.png" alt="">
               </a>
             </div>
-            <div class="col-lg-8 nav-menu-wrap">
+            <div class="col-lg-7 nav-menu-wrap">
             <ul class="nav-menu">
                 <li><a href="index.html">Home</a></li>
-                <li><a href="#Work-process">How it Work</a></li>
-                <li><a href="#category">Categories</a></li>
-                <li><a href="#features">Why Choose Us</a></li>
-                <li><a href="#testimonial">Testimonial</a></li>
+                <li><a href="take-a-test.html">Test</a></li>
+                <li><a href="question-bank.html">Question Bank</a></li>
+                <li><a href="settings.html">Settings</a></li>
+                <li><a href="contact-us.html">Contact Us</a></li>
+                <li><a href="#"><img src="assets/images/icons/search.svg" alt=""></a></li>
             </ul>
             </div>
-            <div class="col-lg-2 btn-wrap">
-              <div class="btn signup-btn" onclick="javascript:window.location.href='register.html'">Register</div>
+            <!-- <div class="col-lg-1 serch-icon-container">
+                <img src="assets/images/icons/search.svg" alt="">
+            </div> -->
+            <div class="col-lg-3 btn-container">
               <div class="btn signin-btn" onclick="javascript:window.location.href='login.html'">Login</div>
+              <div class="btn signup-btn" onclick="javascript:window.location.href='register.html'">Register</div>
             </div>
           </div>
         </div>
@@ -64,356 +121,542 @@
       <section class="hero-section">
         <div class="container">
             <div class="row">
-                <div class="col-lg-6 text-half">
-                    <h1 class="hero-title">Unleash Your Mathematical Superpowers! </h1>
-                    <p class="hero-description">Unleash Your Mathematical Superpowers! </p>
-                    <div class="pad-20"></div>
-                    <a href="register.html" class="btn hero-register-btn">Register Now</a>
-                    <a href="#" class="all-categories-link btn">See all Categories</a>
+                <div class="col-lg-8 col-md-8 col-sm-6 text-half">
+                    <div class="pad-20 hide-desktop hide-laptop hide-tab hide-big-mobile"></div>
+                    <h1 class="hero-title">Crack <span>NEET</span> with a formulated smart practice  </h1>
+                    <p class="hero-description">We prepare you to engage in the world that is and to help bring about a world that ought to be</p>
+                    <div class="pad-10"></div>
+                    <a href="register.html" class="btn get-started-btn">Get Started</a>
+                    <!-- <div class="pad-20"></div> -->
                 </div>
-                <div class="col-lg-6">
-                    <img src="assets/images/landing-page/hero-img.png" alt="">
+                <div class="col-lg-4 col-md-4 col-sm-6 ">
+                    <img src="assets/images/home/hero-girl-img2.png" alt="">
+                </div>
+            </div>
+            <div class="row hero-feature-box">
+                <div class="col-lg-4 col-md-4 col-sm-6">
+                    <img src="assets/images/home/live-chat.png" alt="">
+                    <h2>LiveChat</h2>
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-6">
+                    <img src="assets/images/home/examination.png" alt="">
+                    <h2>Examination</h2>
+                </div>
+                <div class="col-lg-4 col-md-4">
+                    <img src="assets/images/home/competition.png" alt="">
+                    <h2>Competition</h2>
                 </div>
             </div>
         </div>
       </section>
       <!-- hero section ends -->
+      <div class="pad-30"></div>
 
-      <!-- how it works start -->
-      <section class="how-it-works-section">
+      <!-- subjects section starts -->
+      <section class="all-subject-section">
         <div class="container">
             <div class="row">
-                <h1 class="section-title mb-25">
-                    "Unlock the Math Quest: Register and<br>Play in Just a Few Steps!"
-                </h1>
-                <p class="section-text mb-25">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, <br>sed do eiusmod tempor incididunt ut labore et
-                </p>
-                <div class="row step-card-container">
-                    <div class="col-lg-3 step-card">
-                        <img class="mb-25" src="assets/images/landing-page/step-1.png" alt="">
-                        <h3 class="step-title">Register</h3>
-                        <p class="step-description">Aliquam erat volutpat. Integer malesuada turpis id fringilla suscipit. Maecenas ultrices, orci vitae convallis mattis.</p>
+                <h1 class="section-title">All Subjects</h1>
+            </div>
+            <div class="row">
+                <div class="col-lg-4 col-md-6">
+                    <div class="outer-container">
+                        <div class="img-container">
+                            <img src="assets/images/home/physics.png" alt="">
+                        </div>
+                        <div class="content-container">
+                            <div class="col-9">
+                                <h4 class="subject-title">Physics</h4>
+                                <div class="subject-data-container">
+                                    <p class="timeline">6 weeks</p>
+                                    <p><img src="assets/images/icons/students.svg" alt=""> 1.5k Students</p>
+                                </div>
+
+                            </div>
+                            <div class="col-3">
+                                <p>
+                                    <img src="assets/images/icons/star.svg" alt="">
+                                    4.5
+                                </p>
+                            </div>
+                        </div>
                     </div>
-                    <div class="col-lg-3 step-card">
-                        <img class="mb-25" src="assets/images/landing-page/step-2.png" alt="">
-                        <h3 class="step-title">Choose Your Pack</h3>
-                        <p class="step-description">Aliquam erat volutpat. Integer malesuada turpis id fringilla suscipit. Maecenas ultrices, orci vitae convallis mattis.</p>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="outer-container">
+                        <div class="img-container">
+                            <img src="assets/images/home/biology.png" alt="">
+                        </div>
+                        <div class="content-container">
+                            <div class="col-9">
+                                <h4 class="subject-title">Biology</h4>
+                                <div class="subject-data-container">
+                                    <p class="timeline">6 weeks</p>
+                                    <p><img src="assets/images/icons/students.svg" alt=""> 1.5k Students</p>
+                                </div>
+
+                            </div>
+                            <div class="col-3">
+                                <p>
+                                    <img src="assets/images/icons/star.svg" alt="">
+                                    4.5
+                                </p>
+                            </div>
+                        </div>
                     </div>
-                    <div class="col-lg-3 step-card">
-                        <img class="mb-25" src="assets/images/landing-page/step-3.png" alt="">
-                        <h3 class="step-title">Play the Quiz</h3>
-                        <p class="step-description">Aliquam erat volutpat. Integer malesuada turpis id fringilla suscipit. Maecenas ultrices, orci vitae convallis mattis.</p>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="outer-container">
+                        <div class="img-container">
+                            <img src="assets/images/home/chemistry.png" alt="">
+                        </div>
+                        <div class="content-container">
+                            <div class="col-9">
+                                <h4 class="subject-title">Chemistry</h4>
+                                <div class="subject-data-container">
+                                    <p class="timeline">6 weeks</p>
+                                    <p><img src="assets/images/icons/students.svg" alt=""> 1.5k Students</p>
+                                </div>
+
+                            </div>
+                            <div class="col-3">
+                                <p>
+                                    <img src="assets/images/icons/star.svg" alt="">
+                                    4.5
+                                </p>
+                            </div>
+                        </div>
                     </div>
-                    <img class="arrow-1" src="assets/images/landing-page/dash-arrow.png" alt="">
-                    <img class="arrow-2" src="assets/images/landing-page/dash-arrow.png" alt="">
                 </div>
             </div>
         </div>
       </section>
-      <!-- how it works end -->
+      <!-- subjects section ends -->
 
-      <!-- category section starts -->
-      <section class="category-section">
+      <!-- ask doubt section  starts-->
+      <section class="ask-doubt-section">
         <div class="container">
             <div class="row">
-                <h1 class="section-title mb-25">"Play, Explore, Conquer: Choose Your Favorite<br> Categories and Embark on an Epic Quiz Journey!"</h1>
-                <p class="section-text mb-25">Lorem ipsum dolor sit amet, consectetur adipiscing elit,<br> sed do eiusmod tempor incididunt ut labore et </p>
-            </div>
-            <div class="row">
-                <div class="col-lg-3 category-title-btn active">Popular</div>
-                <div class="col-lg-3 category-title-btn">Trending</div>
-                <div class="col-lg-3 category-title-btn">Latest</div>
-                <div class="col-lg-3 category-title-btn">Explore All</div>
-            </div>
-            <div class="row">
-                <div class="col-lg-3" style="position: relative;">
-                    <img class="category-card-bg" src="assets/images/category/image 1.png" alt="">
-                    <div class="category-card">
-                        <h3 class="category-card-title">Arithmetic Adventures</h3>
-                        <div class="row">
-                            <div class="player-number">250 player</div>
-                            <a href="#" class="play-btn">Play Now</a>
-                        </div>
-                    </div>
-                    
-                </div>
-                <div class="col-lg-3" style="position: relative;">
-                    <img class="category-card-bg" src="assets/images/category/image 1.png" alt="">
-                    <div class="category-card">
-                        <h3 class="category-card-title">Arithmetic Adventures</h3>
-                        <div class="row">
-                            <div class="player-number">250 player</div>
-                            <a href="#" class="play-btn">Play Now</a>
-                        </div>
-                    </div>
-                    
-                </div>
-                <div class="col-lg-3" style="position: relative;">
-                    <img class="category-card-bg" src="assets/images/category/image 1.png" alt="">
-                    <div class="category-card">
-                        <h3 class="category-card-title">Arithmetic Adventures</h3>
-                        <div class="row">
-                            <div class="player-number">250 player</div>
-                            <a href="#" class="play-btn">Play Now</a>
-                        </div>
-                    </div>
-                    
-                </div>
-                <div class="col-lg-3" style="position: relative;">
-                    <img class="category-card-bg" src="assets/images/category/image 1.png" alt="">
-                    <div class="category-card">
-                        <h3 class="category-card-title">Arithmetic Adventures</h3>
-                        <div class="row">
-                            <div class="player-number">250 player</div>
-                            <a href="#" class="play-btn">Play Now</a>
-                        </div>
-                    </div>
-                    
+                <div class="col-lg-6 col-md-6">
+                    <img src="assets/images/home/doubt-img.png" alt="">
+                    <div class="pad-20 hide-desktop hide-laptop hide-tab hide-big-mobile"></div>
                 </div>
                 
-            </div>
-        </div>
-      </section>
-      <!-- category section ends -->
-      <!-- why choose us starts -->
-      <section class="why-choose-us-section">
-        <div class="container">
-            <div class="row">
-                <h1 class="section-title mb-25">"Math Quiz Mastery: Unveiling the Benefits of Engaging in Mathematical Challenges!"</h1>
-                <p class="section-description mb-25">Lorem ipsum dolor sit amet, consectetur adipiscing elit,<br>sed do eiusmod tempor incididunt ut labore e</p>
-            </div>
-            <div class="row">
-                <div class="col-lg-3">
-                    <img src="assets/images/gifs/why-choose-us.gif" alt="">
-                </div>
-                <div class="col-lg-3">
-                    <div class="why-choose-card blue-card">
-                        <h3 class="why-choose-us-card-title">Enhances Mathematical Skills</h3>
-                        <p class="why-choose-us-card-text">Regularly engaging in math quizzes helps improve your problem-solving abilities, numerical aptitude, and mathematical reasoning.</p>
-                    </div>
-                </div>
-                <div class="col-lg-3">
-                    <div class="why-choose-card pink-card">
-                        <h3 class="why-choose-us-card-title">Boosts Mental Agility</h3>
-                        <p class="why-choose-us-card-text">Math quizzes require quick thinking, mental calculations, and logical reasoning, thereby enhancing your cognitive flexibility and mental agility.</p>
-                    </div>
-                </div>
-                <div class="col-lg-3">
-                    <div class="why-choose-card yellow-card">
-                        <h3 class="why-choose-us-card-title">Builds Confidence</h3>
-                        <p class="why-choose-us-card-text">Successfully solving math problems in quizzes boosts your confidence in your mathematical abilities and fosters a positive attitude towards the subject.</p>
-                    </div>
+
+                <div class="col-lg-6 col-md-6 text-half">
+                    <h2 class="section-title ask-doubt-section-title">Ask A Doubt</h2>
+                    <p>If you have any doubts or questions about the course material, you can ask our instructors through our "Ask a Doubt" feature.</p>
+                    <div class="pad-20"></div>
+                    <a href="register.html" class="btn get-started-btn">Ask Doubt</a>
                 </div>
             </div>
         </div>
       </section>
-      <!-- why choose us ends -->
-      <!-- dark offer section starts -->
-      <section class="offer-section">
+      <!-- ask doubt section  ends -->
+      <!-- popular course section starts  -->
+      <section class="popular-course-section">
         <div class="container">
             <div class="row">
-                <div class="col-lg-5">
-                    <img src="assets/images/gifs/offer.gif" alt="">
+                <div class="section-title">Explore Our<br> Popular Course</div>
+            </div>
+            <div class="row">
+                <div class="col-lg-4 col-md-6">
+                    <div class="outer-container">
+                        <div class="img-container">
+                            <img src="assets/images/home/course.png" alt="">
+                        </div>
+                        <div class="content-container">
+                            <div class="col-9">
+                                <h4 class="subject-title">Learn Marketing from Top Instructors.</h4>
+                                <div class="subject-data-container">
+                                    <p class="timeline">6 weeks</p>
+                                    <p><img src="assets/images/icons/students.svg" alt=""> 1.5k Students</p>
+                                </div>
+
+                            </div>
+                            <div class="col-3">
+                                <p>
+                                    <img src="assets/images/icons/star.svg" alt="">
+                                    4.5
+                                </p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div class="col-lg-7 offer-text-container">
-                    <h1 class="offer-title">Enjoy Cashback on Your Recharge! Get Money Refunded!"</h1>
-                    <div class="pad-10"></div>
-                    <p class="offer-text">Recharging your mobile has never been more rewarding. Now, you can enjoy cashback on every recharge you make! Follow these simple steps to avail of the cashback offer:</p>
+                <div class="col-lg-4 col-md-6">
+                    <div class="outer-container">
+                        <div class="img-container">
+                            <img src="assets/images/home/course.png" alt="">
+                        </div>
+                        <div class="content-container">
+                            <div class="col-9">
+                                <h4 class="subject-title">Learn Marketing from Top Instructors.</h4>
+                                <div class="subject-data-container">
+                                    <p class="timeline">6 weeks</p>
+                                    <p><img src="assets/images/icons/students.svg" alt=""> 1.5k Students</p>
+                                </div>
+
+                            </div>
+                            <div class="col-3">
+                                <p>
+                                    <img src="assets/images/icons/star.svg" alt="">
+                                    4.5
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="outer-container">
+                        <div class="img-container">
+                            <img src="assets/images/home/course.png" alt="">
+                        </div>
+                        <div class="content-container">
+                            <div class="col-9">
+                                <h4 class="subject-title">Learn Marketing from Top Instructors.</h4>
+                                <div class="subject-data-container">
+                                    <p class="timeline">6 weeks</p>
+                                    <p><img src="assets/images/icons/students.svg" alt=""> 1.5k Students</p>
+                                </div>
+
+                            </div>
+                            <div class="col-3">
+                                <p>
+                                    <img src="assets/images/icons/star.svg" alt="">
+                                    4.5
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="outer-container">
+                        <div class="img-container">
+                            <img src="assets/images/home/course.png" alt="">
+                        </div>
+                        <div class="content-container">
+                            <div class="col-9">
+                                <h4 class="subject-title">Learn Marketing from Top Instructors.</h4>
+                                <div class="subject-data-container">
+                                    <p class="timeline">6 weeks</p>
+                                    <p><img src="assets/images/icons/students.svg" alt=""> 1.5k Students</p>
+                                </div>
+
+                            </div>
+                            <div class="col-3">
+                                <p>
+                                    <img src="assets/images/icons/star.svg" alt="">
+                                    4.5
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="outer-container">
+                        <div class="img-container">
+                            <img src="assets/images/home/course.png" alt="">
+                        </div>
+                        <div class="content-container">
+                            <div class="col-9">
+                                <h4 class="subject-title">Learn Marketing from Top Instructors.</h4>
+                                <div class="subject-data-container">
+                                    <p class="timeline">6 weeks</p>
+                                    <p><img src="assets/images/icons/students.svg" alt=""> 1.5k Students</p>
+                                </div>
+
+                            </div>
+                            <div class="col-3">
+                                <p>
+                                    <img src="assets/images/icons/star.svg" alt="">
+                                    4.5
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="outer-container">
+                        <div class="img-container">
+                            <img src="assets/images/home/course.png" alt="">
+                        </div>
+                        <div class="content-container">
+                            <div class="col-9">
+                                <h4 class="subject-title">Learn Marketing from Top Instructors.</h4>
+                                <div class="subject-data-container">
+                                    <p class="timeline">6 weeks</p>
+                                    <p><img src="assets/images/icons/students.svg" alt=""> 1.5k Students</p>
+                                </div>
+
+                            </div>
+                            <div class="col-3">
+                                <p>
+                                    <img src="assets/images/icons/star.svg" alt="">
+                                    4.5
+                                </p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
       </section>
-      <!-- dark offer section ends -->
-      <!-- testimonial section starts -->
-      <div class="testimonial-section">
+      <!-- popular course section ends  -->
+
+      <!-- test-series section starts  -->
+      <section class="test-series-section">
         <div class="container">
             <div class="row">
-                <h1 class="section-title mb-25">"Math Quiz Delight: Hear from our Happy <br>Quizzers and Their Success Stories!"</h1>
-                <p class="section-text mb-25">Lorem ipsum dolor sit amet, consectetur adipiscing elit, <br>sed do eiusmod tempor incididunt ut lab</p>
+                <div class="col-lg-6">
+                    <h2 class="section-title test-series-section-title">Take a Wide Range of Test Series</h2>
+                    <p>You can take the tests as many times as you like to improve your understanding of the course material.</p>
+                    
+                    <a href="register.html" class="btn get-started-btn">Take A Test</a>
+                </div>
+                <div class="col-lg-6">
+                    <!-- <img src="assets/images/home/test-series-img.png" alt=""> -->
+                </div>
+            </div>
+        </div>
+      </section>
+      <!-- test-series section ends  -->
+
+      <!-- popular examination section starts -->
+      <section class="popular-examination-section">
+        <div class="container">
+            <div class="row">
+                <h2 class="section-title">Popular Examination</h2>
             </div>
             <div class="row">
                 <div class="col-lg-12">
                     <div class="testimonial_slider_area text-center owl-carousel">
-                        <div class="box-area">
-                            <div class="box-header">
-                                <div class="avatar-container">
-                                    <img src="assets/images/landing-page/user1.png" alt="">
-                                </div>
-                                <div class="profile-details">
-                                    <h4>Viezh Robert</h4>
-                                    <p>Warsaw, Poland</p>
-                                </div>
-                                <div class="rating-container">
-                                    <p>4.5</p>
-                                </div>
+                            <div class="popular-exam-container">
+                                <img src="assets/images/home/popular.png" alt="">
+                                <h3>Applied Maths</h3>
                             </div>
-                            <p class="testimonial-content">“Wow... I am very happy to use this VPN, it turned out to be more than my expectations and so far there have been no problems. LaslesVPN always the best”.</p>
-                        </div>
-                        <div class="box-area">
-                            <div class="box-header">
-                                <div class="avatar-container">
-                                    <img src="assets/images/landing-page/user1.png" alt="">
-                                </div>
-                                <div class="profile-details">
-                                    <h4>Viezh Robert</h4>
-                                    <p>Warsaw, Poland</p>
-                                </div>
-                                <div class="rating-container">
-                                    <p>4.5</p>
-                                </div>
+                            <div class="popular-exam-container">
+                                <img src="assets/images/home/popular.png" alt="">
+                                <h3>Applied Maths</h3>
                             </div>
-                            <p class="testimonial-content">“Wow... I am very happy to use this VPN, it turned out to be more than my expectations and so far there have been no problems. LaslesVPN always the best”.</p>
-                        </div>
-                        <div class="box-area">
-                            <div class="box-header">
-                                <div class="avatar-container">
-                                    <img src="assets/images/landing-page/user1.png" alt="">
-                                </div>
-                                <div class="profile-details">
-                                    <h4>Viezh Robert</h4>
-                                    <p>Warsaw, Poland</p>
-                                </div>
-                                <div class="rating-container">
-                                    <p>4.5</p>
-                                </div>
+                        
+                            <div class="popular-exam-container">
+                                <img src="assets/images/home/popular.png" alt="">
+                                <h3>Applied Maths</h3>
                             </div>
-                            <p class="testimonial-content">“Wow... I am very happy to use this VPN, it turned out to be more than my expectations and so far there have been no problems. LaslesVPN always the best”.</p>
-                        </div>
-                        <div class="box-area">
-                            <div class="box-header">
-                                <div class="avatar-container">
-                                    <img src="assets/images/landing-page/user1.png" alt="">
-                                </div>
-                                <div class="profile-details">
-                                    <h4>Viezh Robert</h4>
-                                    <p>Warsaw, Poland</p>
-                                </div>
-                                <div class="rating-container">
-                                    <p>4.5</p>
-                                </div>
+                        
+                            <div class="popular-exam-container">
+                                <img src="assets/images/home/popular.png" alt="">
+                                <h3>Applied Maths</h3>
                             </div>
-                            <p class="testimonial-content">“Wow... I am very happy to use this VPN, it turned out to be more than my expectations and so far there have been no problems. LaslesVPN always the best”.</p>
-                        </div>
-                        <div class="box-area">
-                            <div class="box-header">
-                                <div class="avatar-container">
-                                    <img src="assets/images/landing-page/user1.png" alt="">
-                                </div>
-                                <div class="profile-details">
-                                    <h4>Viezh Robert</h4>
-                                    <p>Warsaw, Poland</p>
-                                </div>
-                                <div class="rating-container">
-                                    <p>4.5</p>
-                                </div>
+                        
+                            <div class="popular-exam-container">
+                                <img src="assets/images/home/popular.png" alt="">
+                                <h3>Applied Maths</h3>
                             </div>
-                            <p class="testimonial-content">“Wow... I am very happy to use this VPN, it turned out to be more than my expectations and so far there have been no problems. LaslesVPN always the best”.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+      </section>
+      <!-- popular examination section ends -->
+      <!-- registration section starts -->
+      <section class="registration-section-upper">
+        <div class="container">
+            <div class="row">
+                <h2 class="section-title">Register To Unlock the other Features</h2>
+            </div>
+        </div>
+      </section>
+      <section class="registration-section-lower">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6">
+                    <img src="assets/images/home/other-feature-img.png" alt="">
+                </div>
+                <div class="col-lg-6 form-half">
+                    <div class="form-container">
+                        <p class="form-title">Registration to get notified about new Subjects and Question Bank we publish.</p>
+                        <div class="pad-20"></div>
+                        <div class="input-container">
+                            <input type="text" placeholder="Full name">
                         </div>
-                        <div class="box-area">
-                            <div class="box-header">
-                                <div class="avatar-container">
-                                    <img src="assets/images/landing-page/user1.png" alt="">
+                        <div class="input-container">
+                            <input type="email" placeholder="Email">
+                        </div>
+                        <div class="input-container">
+                            <input type="phone" placeholder="Phone number">
+                        </div>
+                        <div class="input-container">
+                            <select name="select-course" id="course">
+                                <option value="Course-1"><img src="assets/images/icons/snowflake.svg" alt=""> List</option>
+                                <option value="Course-1"><img src="assets/images/icons/snowflake.svg" alt=""> List</option>
+                                <option value="Course-1"><img src="assets/images/icons/snowflake.svg" alt=""> List</option>
+                            </select>
+                        </div>
+                        <div class="submit-btn-container">
+                            <button class="btn submit-btn">Submit</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+      </section>
+      <!-- registration section ends -->
+
+      <!-- recent section starts  -->
+      <section class="recent-activity-section">
+        <div class="container">
+            <div class="row">
+                <h2 class="section-title">Recent Activities</h2>
+            </div>
+
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="testimonial_slider_area text-center owl-carousel">
+                                <div class="recent-activity-card">
+                                    <img src="assets/images/home/recent-activity-chemistry.jpg" alt="">
+                                    <h3 class="recent-sub-title">Chemistry Test - 01</h3>
                                 </div>
-                                <div class="profile-details">
-                                    <h4>Viezh Robert</h4>
-                                    <p>Warsaw, Poland</p>
-                                </div>
-                                <div class="rating-container">
-                                    <p>4.5</p>
-                                </div>
+                            <div class="recent-activity-card">
+                                <img src="assets/images/home/recent-activity-biology.jpg" alt="">
+                                <h3 class="recent-sub-title">Biology Test - 16</h3>
                             </div>
-                            <p class="testimonial-content">“Wow... I am very happy to use this VPN, it turned out to be more than my expectations and so far there have been no problems. LaslesVPN always the best”.</p>
-                        </div>
+                        
+                            <div class="recent-activity-card">
+                                <img src="assets/images/home/recent-activity-physics.jpg" alt="">
+                                <h3 class="recent-sub-title">Physics Test - 10</h3>
+                            </div>
+                        
+                            <div class="recent-activity-card">
+                                <img src="assets/images/home/recent-activity-chemistry.jpg" alt="">
+                                <h3 class="recent-sub-title">Chemistry Test - 01</h3>
+                            </div>
+                        
+                            <div class="recent-activity-card">
+                                <img src="assets/images/home/recent-activity-biology.jpg" alt="">
+                                <h3 class="recent-sub-title">Biology Test - 21</h3>
+                            </div>
+                        
+                            <div class="recent-activity-card">
+                                <img src="assets/images/home/recent-activity-physics.jpg" alt="">
+                                <h3 class="recent-sub-title">Physics Test - 11</h3>
+                            </div>
                         
                     </div>
 
                 </div>
             </div>
         </div>
-      </div>
-      <!-- testimonial section ends -->
+      </section>
+      <!-- recent section ends  -->
 
-      <!-- footer image starts  -->
-      <section class="footer-image-section">
+     <!-- video section starts  -->
+     <section class="video-activity-section">
         <div class="container">
             <div class="row">
-                <img src="assets/images/landing-page/footer-strip.png" alt="">
+                <div class="col-lg-6 col-md-6 img-half">
+                    <img src="assets/images/home/video-img.png" alt="" data-bs-toggle="modal" data-bs-target="#videoModal">
+                </div>
+                <div class="col-lg-6 col-md-6 text-half">
+                    <h2 class="section-title video-section-title">Video Reference</h2>
+                    <p>You can access the videos from anywhere, at any time. Simply select the topic you wish to learn and start watching.</p>
+                    <div class="pad-20"></div>
+                    <a href="register.html" class="btn get-started-btn">Register</a>
+                </div>
             </div>
         </div>
       </section>
-       <!-- footer image ends  -->
-      <!-- footer starts -->
+      <!-- video section ends  -->
+
+      <!-- footer section starts -->
       <footer class="footer-section">
         <div class="container">
             <div class="row">
-                <div class="col-lg-4 footer-left">
-                    <img class="footer-logo" src="assets/images/common/footer-logo.png" alt="">
-                    <div class="pad-10"></div>
-                    <p>"Unlock the World of Numbers: Take the Ultimate Math Quiz!"</p>
-                    <ul class="social-icons">
-                        <li>
-                          <a href="https://www.facebook.com/" target="_blank"><img src="assets/images/icons/facebook.svg" alt=""></a>
-                        </li>
-                        <li>
-                          <a href="https://twitter.com/" target="_blank"><img src="assets/images/icons/twitter.svg" alt=""></a>
-                        </li>
-                        <li>
-                          <a href="https://www.instagram.com/" target="_blank"><img src="assets/images/icons/instagram.svg" alt=""></a>
-                        </li>
-                      </ul>
+                <div class="col-lg-3 col-md-12">
+                    <img src="assets/images/common/logo.png" alt="">
+                    <p>We are not here to sell you products, we sell value throught our expertise.</p>
+                    <ul class="social-icon-container">
+                        <li><a href="#"><img src="assets/images/icons/facebook.svg" alt=""></a></li>
+                        <li><a href="#"><img src="assets/images/icons/twitter.svg" alt=""></a></li>
+                        <li><a href="#"><img src="assets/images/icons/instagram.svg" alt=""></a></li>
+                        <li><a href="#"><img src="assets/images/icons/linkedin.svg" alt=""></a></li>
+                    </ul>
                 </div>
-                <div class="col-lg-3 col-6 offset-lg-2">
-                    <h6 class="footer-title">About</h6> 
-                    <ul class="footer-menu-list">
-                        <li><a href="#">How it works</a></li>
-                        <li><a href="#">Featured</a></li>
-                        <li><a href="#">Partnership</a></li>
-                        <li><a href="#">Business Relation</a></li>
-                      </ul>
+                <div class="col-lg-2 col-md-4  col-sm-4 col-6">
+                    <div class="pad-30"></div>
+                    <ul class="footer-menu">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="settings.html">Settings</a></li>
+                        <li><a href="take-a-test.html">Test</a></li>
+                        <li><a href="question-bank.html">Question Bank</a></li>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Reviews</a></li>
+                    </ul>
                 </div>
-                <div class="col-lg-3 col-6">
-                    <h6 class="footer-title">Socials</h6>
-                    <ul class="footer-menu-list">
-                        <li><a href="#">Discord</a></li>
-                        <li><a href="#">Instagram</a></li>
-                        <li><a href="#">Twitter</a></li>
-                        <li><a href="#">Facebook</a></li>
-                      </ul>
+                <div class="col-lg-2 col-md-4 col-sm-4 col-6">
+                    <div class="pad-30"></div>
+                    <ul class="footer-menu">
+                        <li><a href="contact-us.html">Contact Us</a></li>
+                        <li><a href="#">Place A Call</a></li>
+                        <li><a href="#">Email</a></li>
+                        <li><a href="privacy-policy.html">Privacy Policy</a></li>
+                        <li><a href="terms-condition.html">Terms Of Use</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-2 col-md-4  col-sm-4 download-container">
+                    <div class="pad-30"></div>
+                    <a href="#"><img src="assets/images/common/app-store.png" alt=""></a>
+                    <a href="#"><img src="assets/images/common/google-play.png" alt=""></a>
+                </div>
+                <div class="col-lg-3 col-md-12">
+                    <div class="pad-30"></div>
+                    <ul class="contact-menu-footer">
+                        <li><a href="https://neet.m-tutor.com/" target="_blank">neet.m-tutor.com</a></li>
+                        <li>W485, 2nd Avenue, W Block, Sector C, Anna Nagar West, Chennai - 600101</li>
+                        <li><a href="#">044 - 42807514</a></li>
+                        <li>Call Us @ <a href="#">+91 87 54 54 83 83</a></li>
+                        <li><a href="mailto:support@m-tutor.com">support@m-tutor.com</a></li>
+                    </ul>
                 </div>
             </div>
-            <hr>
-            <div class="row">
-                <div class="col-lg-6 footer-left">
-                    <p>©2023 M-Quiz. All rights reserved.</p>
+            <div class="col-lg-6 offset-lg-3 col-md-8 offset-md-2 col-sm-10 offset-sm-1 subs-container">
+                <div class="pad-20"></div>
+                <h3 class="subscribe-text">Subscribe to get latest updates</h3>
+                <div class="row">
+                    <input class="col-8 subs-input" type="text" placeholder="Your Email Address">
+                    <button class="col-4 btn subs-btn">Subscribe</button>
                 </div>
-                <div class="col-lg-3 col-6">
-                    
-                    <ul class="footer-menu-list">
-                        <li><a href="#">Privacy Policy</a></li>
-                      </ul>
-                </div>
-                <div class="col-lg-3 col-6">
-                    <ul class="footer-menu-list">
-                        <li><a href="#">Terms &amp; Conditions</a></li>
-                      </ul>
-                </div>
+                
             </div>
         </div>
       </footer>
-      <!-- footer ends -->
-
-    <!-- slider js files  -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
-    <script src="assets/js/slider.js"></script>
-
+      <!-- footer section ends -->
+     <!-- <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#videoModal">
+        Launch demo modal
+      </button> -->
+      <!--Logout  Modal -->
+      <div class="video-modal modal fade" id="videoModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog modal-dialog-centered">
+          <div class="modal-content">
+            <video controls autoplay mute>
+                <source src="https://www.w3schools.com/tags/movie.mp4" type="video/mp4">
+                <source src="https://www.w3schools.com/tags/movie.ogg" type="video/ogg">
+                Your browser does not support the video tag.
+              </video>
+          </div>
+        </div>
+      </div>
 
     <!--  JS Files -->
     <script src="assets/bootstrap/js/bootstrap.bundle.min.js"></script>
 
     <!-- Main JS File -->
-    <script src="assets/js/script.js"></script>
+    <script src="assets/js/main.js"></script>
+
+    <!-- Slider files  -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <script src="assets/js/slider.js"></script>
 
     
     

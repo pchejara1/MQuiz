@@ -1,23 +1,24 @@
 $(".testimonial_slider_area").owlCarousel({
     autoplay:true,
     sliderSpeed:3000,
-    items:3,
+    items:4,
     nav:true,
-    navText:['<i class="fa fa-arrow-left"></i>','&emsp;<i class="fa fa-arrow-right"></i>'],
+    navText:['<i class="fa fa-arrow-left"></i>','<i class="fa fa-arrow-right"></i>'],
     margin:30,
     dots:false,
     responsive:{
         320:{
             items:1
         },
-        767:{
+        600:{
             items:2
         },
-        600:{
+        776:{
             items:3
         },
+        
         1000:{
-            items:3
+            items:4
         }
     }
 })

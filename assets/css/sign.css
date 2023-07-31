@@ -1,0 +1,176 @@
+
+.sign-section{
+    min-height: 80vh;
+    display: flex;
+    margin: auto;
+    align-items: center;
+    justify-content: center;
+}
+.col-container{
+    background-color: var(--primary);
+    border-radius: 0.625rem;
+    /* padding: 20px; */
+    min-height: 60vh;
+    margin: 5rem;
+    
+}
+.col-container *{
+    /* border: 1px solid blueviolet; */
+}
+.form-container{
+
+}
+.form-heading{
+    color: var(--primary);
+}
+.sign-img-half{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.sign-card{
+    border-radius: 0.3125rem;
+    border: 10px solid #6035B4;
+    background: #FFF;
+    margin: 10vh 10% 10vh -10%;
+    box-shadow: 0 0 10px #848484;
+    padding: 2rem;
+    border-radius: 0.6rem;
+}
+.sign-content-half{
+    padding: 0;
+    margin: auto;
+}
+.card-intro h3{
+    color: #6148EC;
+    font-size: 2.25rem;
+    font-weight: 600;
+}
+input {
+    outline: none;
+}
+.sign-form-bg label{
+    color: var(--black);
+    font-size: 1.25rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.3125rem;
+}
+.form-control, .form-select {
+    border-color: var(--primary);
+    border-radius: 4px;
+    padding: 0.6rem;
+}
+a{
+    color: #6148EC;
+}
+p{
+    color: #2F2F2F;
+    font-size: 1.25rem;
+    font-weight: 400;
+    margin-bottom: 0;
+    /* line-height: 1.3125rem; */
+}
+.btn-sign{
+    background-color: #6148EC;
+    color: var(--white);
+    border-radius: 0.25rem;
+    font-size: 1.25rem;
+    font-weight: 600;
+    padding: .5rem;
+    text-align: center;
+}
+.otp-container {
+    display: flex;
+    justify-content: center;
+}
+.otp-container input {
+    width: 50px;
+    margin: 0 15px;
+}
+.password-hint{
+    color: #818488;
+}
+.resend-timer-container{
+    display: flex;
+    justify-content: space-between;
+}
+.resend-timer-container p{
+    color: #6148EC;
+}
+.success-text{
+    background-color: #F9F9F9 !important;
+    color: #6148EC;
+    font-size: 1.25rem;
+    font-weight: 500;
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+   
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) and (max-width: 1200px) {
+    
+
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) and (max-width: 992px) {
+    .sign-content-half {
+        order: 2;
+    }
+    .sign-img-half{
+        order: 1;
+    }
+    .col-container {
+        border-radius: 0rem;
+        padding: 2rem;
+        margin: 0rem;
+    }
+    .sign-card {
+        margin: 2rem;
+    }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) and (max-width: 768px) {
+    .sign-content-half {
+        order: 2;
+    }
+    .sign-img-half{
+        order: 1;
+    }
+    .col-container {
+        border-radius: 0rem;
+        padding: 2rem;
+        margin: 0rem;
+    }
+    .sign-card {
+        margin: 2rem;
+    }
+    
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    .sign-content-half {
+        order: 2;
+    }
+    .sign-img-half{
+        order: 1;
+    }
+    .col-container {
+        border-radius: 0rem;
+        padding: 2rem;
+        margin: 0rem;
+    }
+    .sign-card {
+        margin: 1rem 0;
+        border-width: 5px;
+    }
+    .container{
+        padding: 0;
+    }
+}
